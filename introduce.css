@@ -1,0 +1,212 @@
+
+/*문서 전반 스타일*/
+.mainbox{
+  text-align: center;
+  font-family: 'Dongle', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px double rgba(177, 146, 251, 0.811);
+  background-color: rgba(238, 221, 253, 0.377);
+  box-shadow: 0px 3px 20px 3px rgb(168, 92, 255);
+}
+
+/*메인 타이틀 스타일*/
+.maintitle{
+  font-weight: bold;
+  font-style: italic;
+  font-size: 70px;
+  color:rgb(155, 113, 255);
+  border-bottom: 4px double rgb(206, 188, 249);
+}
+
+/*주요 정보 스타일*/
+.maininfo{
+  font-weight:bold;
+  font-size: 35px;
+  padding-top:20px;
+  line-height: 13px;
+  border: 3px dashed rgba(221, 193, 246, 0.848);
+  border-radius: 20px;
+  width:450px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  color:rgb(182, 99, 255);
+}
+
+/*내 사진 마우스 오버*/
+.minjiimg{
+  width: 170px;
+  height: 235px;
+  border-radius: 25px; 
+  margin: 0px auto;
+  background: url(image/민쥐.jpg) no-repeat;
+  background-size: contain;
+}
+.liketext{
+  background: #fffbfb;
+  border-radius: 25px;
+  height: 100%;
+  opacity:0;
+}
+.minjiimg:hover .liketext{
+  cursor: pointer;
+  opacity: 0.6;
+  color: #2d2929;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 230px;
+}
+
+#sendtxt{
+  background-color: rgb(243, 219, 255);
+  border: 2px solid rgb(198, 159, 250);
+  color:rgb(183, 25, 251);
+  font-size: 23px;
+}
+#sendtxt:focus{
+  outline-color:rgb(190, 40, 255);
+}
+
+#resulttxt{
+  font-size: 23px;
+  color: rgb(185, 100, 250);
+  margin-top: 0px;
+}
+
+/*서브 타이틀 스타일*/
+h3{
+  font-style: italic;
+  border-top: 2px solid rgba(169, 77, 255, 0.702);
+  border-bottom: 2px solid rgba(169, 77, 255, 0.702);
+  width: 400px;
+  height: 65px;
+  color:rgb(168, 100, 231);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*이미지 -> 텍스트 마우스 오버*/
+.imgs{
+  position: relative;
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  display: inline-block;
+}
+.imgs .txt{
+  color: #fff;
+  position: absolute; left: 0px; bottom: 0;
+  background: rgba(0,0,0,0.5);
+  width:100%;
+  height: 100%;
+  border-radius: 200px;
+  padding: 15px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.35s ease-in-out;
+}
+.imgs:hover .txt{
+  opacity: 1;
+}
+.imgs .txt p{
+  font-size: 25px;
+  line-height: 240px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+/*이미지 -> 이미지 마우스 오버*/
+.twoimg{
+  position:relative;
+  margin: 0px auto;
+  width: 250px;
+  display: inline-block;
+}
+.puppy2{
+  position: absolute;
+  top:0px;
+  left:0px;
+  display: none;
+}
+.twoimg:hover .puppy2{
+  display: block;
+}
+.winkpanda{
+  position: absolute;
+  top:0px;
+  left:0px;
+  display: none;
+}
+.twoimg:hover .winkpanda{
+  display: block;
+}
+
+/*서브 정보 스타일*/
+.subinfo{
+  font-weight:bold;
+  font-size: 35px;
+  line-height: 15px;
+  padding-top:20px;
+  border: 3px dashed rgba(221, 193, 246, 0.848);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width:450px;
+  color:rgb(182, 99, 255);
+  margin-bottom: 20px;
+}
+
+/*숨김 박스(리스트)*/
+#secretContent{
+  display: none;
+  font-size: 23px;
+  color:rgb(255, 165, 204);
+  width: 230px;
+  list-style: circle;
+  opacity: 0.7;
+  margin: auto;
+}
+
+#secrets{
+  cursor: pointer;
+  border-bottom: 1px solid rgb(252, 214, 248);
+  color:rgb(255, 165, 204);
+  font-size: 23px;
+  opacity: 0.6;
+  margin: auto;
+
+}
+
+#secrets:hover{
+  text-decoration: underline;
+}
+
+/*이미지 변경버튼*/
+#changebtn{
+  border-radius: 20px;
+  font-size: 21px;
+  background-color: rgba(239, 195, 107, 0.935);
+  color:#3d3535;
+  opacity: 0.9;
+  margin-left: 170px;
+  margin-top: 5px;
+  border: 0;
+}
+
+/*마지막 문구 스타일*/
+.lastment{
+  font-weight:bold;
+  font-size: 35px;
+  border: 3px dashed rgba(221, 193, 246, 0.848);
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width:500px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  color:rgb(182, 99, 255);
+  cursor: pointer;
+}
