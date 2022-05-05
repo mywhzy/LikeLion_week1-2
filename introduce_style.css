@@ -1,6 +1,6 @@
 
-/*문서 전반 스타일*/
-.mainbox{
+/*문서 전반 style*/
+.main-box{
   text-align: center;
   font-family: 'Dongle', sans-serif;
   margin-left: auto;
@@ -10,8 +10,8 @@
   box-shadow: 0px 3px 20px 3px rgb(168, 92, 255);
 }
 
-/*메인 타이틀 스타일*/
-.maintitle{
+/*메인 타이틀 style*/
+.main-title{
   font-weight: bold;
   font-style: italic;
   font-size: 70px;
@@ -19,8 +19,21 @@
   border-bottom: 4px double rgb(206, 188, 249);
 }
 
-/*주요 정보 스타일*/
-.maininfo{
+/*Main info box*/
+.wrap1{
+  display: inline-block; 
+  margin-left: 50px;
+}
+
+/*Main info title text*/
+#h3-1{
+  font-size: 55px; 
+  font-weight: bolder; 
+  margin-bottom: 20px;
+}
+
+/*maininfo box 내부 style*/
+.main-info{
   font-weight:bold;
   font-size: 35px;
   padding-top:20px;
@@ -35,7 +48,7 @@
 }
 
 /*내 사진 마우스 오버*/
-.minjiimg{
+.minji-img{
   width: 170px;
   height: 235px;
   border-radius: 25px; 
@@ -43,13 +56,13 @@
   background: url(image/민쥐.jpg) no-repeat;
   background-size: contain;
 }
-.liketext{
+.like-text{
   background: #fffbfb;
   border-radius: 25px;
   height: 100%;
   opacity:0;
 }
-.minjiimg:hover .liketext{
+.minji-img:hover .like-text{
   cursor: pointer;
   opacity: 0.6;
   color: #2d2929;
@@ -58,23 +71,70 @@
   line-height: 230px;
 }
 
-#sendtxt{
+/*textarea 용도 소개하는 p태그 style*/
+#p-toMinji{
+  font-size: 30px; 
+  margin-top:15px; 
+  margin-bottom: 0px; 
+  color:rgb(175, 105, 255);
+}
+
+/*textarea style*/
+#send-txt{
   background-color: rgb(243, 219, 255);
   border: 2px solid rgb(198, 159, 250);
   color:rgb(183, 25, 251);
   font-size: 23px;
 }
-#sendtxt:focus{
+#send-txt:focus{
   outline-color:rgb(190, 40, 255);
 }
 
-#resulttxt{
+/*textarea에 적힌 글자 수 나타내는 부분*/
+#count{
+  font-size: 20px; 
+  color: rgb(166, 53, 246);
+}
+
+/*textarea 아래 send 버튼 style*/
+#send-btn{
+  font-size: 20px; 
+  background-color: rgb(228, 196, 255); 
+  color: rgb(154, 31, 249); 
+  border: 1px solid rgb(198, 98, 252); 
+  border-radius: 10px; 
+  padding-bottom: 0px;
+}
+
+/*💌*/
+#p-emoji{
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+/*text area->send 버튼 클릭 후 직전 입력한 text 나타내는 영역*/
+#result-txt{
   font-size: 23px;
   color: rgb(185, 100, 250);
   margin-top: 0px;
 }
 
-/*서브 타이틀 스타일*/
+/*sub info 박스*/
+.wrap2{
+  display: inline-block; 
+  margin-left: 30px
+}
+
+/*subinfo title style*/
+#h3-2{
+  font-size: 50px; 
+  font-weight: bolder; 
+  margin-top: 20px; 
+  margin-bottom: 20px; 
+  padding-top: 5px;
+}
+
+/*maininfo title,subinfo title 공통 style*/
 h3{
   font-style: italic;
   border-top: 2px solid rgba(169, 77, 255, 0.702);
@@ -84,6 +144,27 @@ h3{
   color:rgb(168, 100, 231);
   margin-left: auto;
   margin-right: auto;
+}
+
+/*sub info 내부 style*/
+.sub-info{
+  font-weight:bold;
+  font-size: 35px;
+  line-height: 15px;
+  padding-top:20px;
+  border: 3px dashed rgba(221, 193, 246, 0.848);
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  width:450px;
+  color:rgb(182, 99, 255);
+  margin-bottom: 20px;
+}
+
+/*subinfo에 이용된 이미지들 공통 style*/
+.img-style{
+  border-radius: 200px; 
+  border: 4px outset rgb(205, 178, 249);
 }
 
 /*이미지 -> 텍스트 마우스 오버*/
@@ -118,7 +199,7 @@ h3{
 }
 
 /*이미지 -> 이미지 마우스 오버*/
-.twoimg{
+.two-imgs{
   position:relative;
   margin: 0px auto;
   width: 250px;
@@ -130,32 +211,17 @@ h3{
   left:0px;
   display: none;
 }
-.twoimg:hover .puppy2{
+.two-imgs:hover .puppy2{
   display: block;
 }
-.winkpanda{
+.winkPanda{
   position: absolute;
   top:0px;
   left:0px;
   display: none;
 }
-.twoimg:hover .winkpanda{
+.two-imgs:hover .winkPanda{
   display: block;
-}
-
-/*서브 정보 스타일*/
-.subinfo{
-  font-weight:bold;
-  font-size: 35px;
-  line-height: 15px;
-  padding-top:20px;
-  border: 3px dashed rgba(221, 193, 246, 0.848);
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 20px;
-  width:450px;
-  color:rgb(182, 99, 255);
-  margin-bottom: 20px;
 }
 
 /*숨김 박스(리스트)*/
@@ -184,7 +250,7 @@ h3{
 }
 
 /*이미지 변경버튼*/
-#changebtn{
+#change-btn{
   border-radius: 20px;
   font-size: 21px;
   background-color: rgba(239, 195, 107, 0.935);
@@ -195,8 +261,8 @@ h3{
   border: 0;
 }
 
-/*마지막 문구 스타일*/
-.lastment{
+/*마지막 문구 style*/
+.last-ment{
   font-weight:bold;
   font-size: 35px;
   border: 3px dashed rgba(221, 193, 246, 0.848);
@@ -208,5 +274,26 @@ h3{
   margin-top: 30px;
   margin-bottom: 5px;
   color:rgb(182, 99, 255);
+  cursor: pointer;
+}
+
+#p-txt1{
+  font-style: italic; 
+  display: inline-block; 
+  margin-bottom: 0px;
+}
+
+#p-txt2{
+  font-style: italic; 
+  display: inline-block; 
+  color:rgb(101, 98, 249); 
+  margin-left:5px; 
+  margin-bottom: 0px;
+}
+
+/*마지막 가보자고 이미지 style*/
+#gabojago{
+  width:50px;
+  height:50px;
   cursor: pointer;
 }
